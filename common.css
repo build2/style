@@ -1,0 +1,39 @@
+/* file      : common.css
+ * copyright : Copyright (c) 2014-2016 Code Synthesis Ltd
+ * license   : MIT; see accompanying LICENSE file
+ */
+
+html
+{
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.4em;
+}
+
+body {margin: 0;} /* There is non-0 default margin for body. */
+
+/* See notes on what's going on here. */
+body {min-width: 17em;}
+@media only screen and (min-width: 360px)
+{
+  body {min-width: 19em;}
+}
+
+#content
+{
+  max-width: 40em;
+  margin: 0 auto 0 auto;
+  padding: 0 .4em 0 .4em; /* Space between text and browser frame. */
+}
+
+code, pre
+{
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 0.92em;
+}
+
+pre
+{
+  white-space: pre-wrap;
+}

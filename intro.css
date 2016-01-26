@@ -1,0 +1,92 @@
+/* file      : intro.css
+ * copyright : Copyright (c) 2014-2016 Code Synthesis Ltd
+ * license   : MIT; see accompanying LICENSE file
+ */
+
+html
+{
+  color: #333;
+  text-align: justify;
+}
+
+#content
+{   
+  padding-left: 3em; /* Reserve for headings. */
+}
+
+h1
+{
+  font-weight: normal;
+  font-size: 1.58em;
+  line-height: 1.4em;
+  
+  margin: 1.6em 0 .6em -1.89em;
+}   
+
+code
+{
+  background-color: rgba(0, 0, 0, 0.04);
+  border-radius: 0.2em;
+  padding: .2em 0 .2em 0;
+}
+
+code::before
+{
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+code::after
+{
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+pre
+{
+  background-color: #f7f7f7;
+  border-radius: 0.2em;
+
+  padding: .8em .4em .8em .4em;
+  margin: 1.5em -.4em 1.5em -.4em; /* Use margins of #content. */
+
+/*
+  padding: .8em 0 .8em .8em;
+  margin: .2em 0 .2em 0;
+  */
+}
+
+dl {
+  margin: 1em 0 1em 0;
+}
+
+dl dt {
+  margin: 0 0 0 0;
+}
+
+dl dd {
+  margin: 0 0 0 1.8em;
+}
+
+/* Title page */
+
+#titlepage {
+  margin: 3em 0 1.8em 0;
+  padding-bottom: .8em;
+  border-bottom: 1px solid black;
+}
+
+#titlepage .title {
+  font-weight: bold;
+  font-size: 200%;
+  text-align: center;
+  padding: 1em 0 2em 0;
+}
+
+#titlepage p {
+  padding-bottom: 1em;
+}
+
+#titlepage #revision {
+  padding-bottom: 0em;
+}

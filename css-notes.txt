@@ -1,0 +1,34 @@
+Some mobile device dimentions:
+
+Nexus 5   360 598
+Nexus 6   412 690
+iPhone 5  320 568
+iPhone 6  375 667
+iPhone 6+ 414 736
+Galaxy 5  360 640
+Galaxy 6  360 640
+
+iPad            768 1024
+Galaxy 2,3 10"  800 1280
+Galaxy 2 7"     600 1024
+
+Based on this, we define the following size brackets:
+
+320-359    small phone portrait
+360-567    big phone portrate
+568-1023   phone landscape, tablets portrate 
+1024-      tablets landscape, monitor
+
+Body min-width:
+
+320px ~ 20em @ 16px font-size. This is factored in when doing font boosting.
+Specifying 320px directly seems to mess it up.
+
+Font boosting results for font-size:1.1em (~18px), min-width:18em on Nexus 5:
+
+     - about 40 characters in portrait
+     - about 70 characters in landscape
+     - landscape font appears slightly smaller
+
+18em on smaller phones (e.g., iPhone 4) appears to trigger scrolling. 17em
+works well, however.
