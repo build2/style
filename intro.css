@@ -6,7 +6,6 @@
 html
 {
   color: #333;
-  text-align: justify;
 }
 
 #content
@@ -49,11 +48,6 @@ pre
 
   padding: .8em .4em .8em .4em;
   margin: 1.5em -.4em 1.5em -.4em; /* Use margins of #content. */
-
-/*
-  padding: .8em 0 .8em .8em;
-  margin: .2em 0 .2em 0;
-  */
 }
 
 dl {

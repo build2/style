@@ -27,6 +27,8 @@ body {min-width: 17em;}
   padding: 0 .4em 0 .4em; /* Space between text and browser frame. */
 }
 
+p, li, dd {text-align: justify;}
+
 code, pre
 {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
