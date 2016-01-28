@@ -9,6 +9,7 @@ html
   font-weight: normal;
   font-size: 18px;
   line-height: 1.4em;
+  letter-spacing: 0.01em;
 }
 
 body {margin: 0;} /* There is non-0 default margin for body. */
@@ -24,18 +25,109 @@ body {min-width: 17em;}
 {
   max-width: 40em;
   margin: 0 auto 0 auto;
-  padding: 0 .4em 0 .4em; /* Space between text and browser frame. */
+  padding: 0 .4em 0 .4em; /* Space between text and browser frame. */  
 }
 
+/* 
+ * Footer. 
+ */
+
+#footer
+{ 
+  color: #767676;
+  font-size: 0.7223em;
+  line-height: 1.3em;
+  margin: 2.2em 0 1em 0;
+  text-align: center;
+}
+
+/* Screen size indicator in the footer. The before/after content is in case
+   we don't have any content in the footer. Margin is to actually see the
+   border separate from the browser frame. */
+
+/*
+#footer:before {content: "\A0";}
+#footer:after {content: "\A0";}
+
+#footer
+{
+  border-left: 1px solid;
+  border-right: 1px solid;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+@media only screen and (max-width: 359px)
+{  
+  #footer {border-color: red;}
+}
+
+@media only screen and (min-width: 360px) and (max-width: 567px)
+{  
+  #footer {border-color: orange;}
+}
+
+@media only screen and (min-width: 568px) and (max-width: 1023px)
+{  
+  #footer {border-color: blue;}
+}
+
+@media only screen and (min-width: 1024px)
+{  
+  #footer {border-color: green;}
+}
+*/
+
+/* 
+ * Common elements. 
+ */
+
 p, li, dd {text-align: justify;}
+
+a
+{
+  color: #3870c0;
+  /*color: #4078c0;*/
+  text-decoration: none;
+}
+
+a:hover, a:active 
+{  
+/*color: #006fbf;*/
+/*color: #0087e7;*/
+  text-decoration: underline;
+}
+
+a:visited 
+{
+/*color: #003388;*/
+  color: #00409c;  
+}
+
+/* Standard lists. */
+ul, ol, dl {margin: 1em 0 1em 0;}
+ul li, ol li {margin: 0 0 .4em 0;}
+ul li {list-style-type: circle;}
+dl dt {margin: 0 0 0 0;}
+dl dd {margin: 0 0 .6em 1.8em;}
 
 code, pre
 {
   font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
   font-size: 0.92em;
+  letter-spacing: 0;
 }
 
 pre
 {
   white-space: pre-wrap;
+}
+
+/* Use page rather than system font settings. */
+input 
+{
+  font-family: inherit;
+  font-weight: inherit;
+  font-size:   inherit;
+  line-height: inherit;
 }
