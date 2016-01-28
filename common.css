@@ -10,6 +10,8 @@ html
   font-size: 18px;
   line-height: 1.4em;
   letter-spacing: 0.01em;
+
+  color: #333;
 }
 
 body {margin: 0;} /* There is non-0 default margin for body. */
@@ -118,9 +120,11 @@ code, pre
   letter-spacing: 0;
 }
 
-pre
-{
-  white-space: pre-wrap;
+pre {white-space: pre-wrap;}
+
+@media only screen and (max-width: 567px)
+{  
+  pre {word-break: break-all;}
 }
 
 /* Use page rather than system font settings. */

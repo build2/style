@@ -5,7 +5,7 @@
 
 pre
 {
-  background-color: #f7f7f7;
+  background-color: rgba(0, 0, 0, 0.05);
   border-radius: 0.2em;
   padding: .8em .4em .8em .4em;
   margin: .2em -.4em .2em -.4em; /* Use margins of #content. */
