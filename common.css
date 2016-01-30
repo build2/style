@@ -23,6 +23,99 @@ body {min-width: 17em;}
   body {min-width: 19em;}
 }
 
+/*
+ * Header (optional).
+ */
+
+#header-bar
+{
+  width: 100%;
+
+  background: rgba(0, 0, 0, 0.04);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+
+  padding: .3em 0 .3em 0;
+  margin: 0 0 1.4em 0;
+}
+
+#header
+{
+  /* Same as in #content. */
+  max-width: 40em;
+  margin: 0 auto 0 auto;
+  padding: 0 .4em 0 .4em;
+
+  width: 100%;
+  display: table;
+  border: none;
+  border-collapse: collapse;
+}
+
+#header-logo, #header-menu 
+{
+  display: table-cell; 
+  border: none;
+  padding: 0;
+  vertical-align: middle;
+}
+
+#header-logo {text-align: left;}
+#header-menu {text-align: right;}
+
+/* These overlap with #header's padding, FSR. To make this work when -menu is
+   flexbox, we have to add this padding to its children so they don't touch
+   the browser frame. Don't you just love web development? */
+#header-logo {padding-left: .4em;}
+#header-menu a {margin-right: .45em;} /* Font size adjustment. */
+
+#header-menu a
+{
+  font-size: 0.889em;  
+  line-height: 1.4em;
+  text-align: right;
+  margin-left: .75em;
+  white-space: nowrap;
+}
+
+#header-menu a {color: #000;}
+#header-menu a:visited {color: #000;}
+#header-menu a:hover, #header-menu a:active 
+{
+  color: #3870c0;
+  text-decoration: none;
+}
+
+/* Flexbox-based improvements though the above works reasonably well. */
+#header-menu
+{
+  width: 100%;
+
+  display: -webkit-inline-flex;
+  display: inline-flex;
+
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;  
+
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+}
+
+/* Whether we want it (and at which point) depends on the size of the menu. */
+/*
+@media only screen and (max-width: 567px)
+{
+  #header-menu
+  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+*/
+
+/* 
+ * Content. 
+ */
+
 #content
 {
   max-width: 40em;
@@ -31,7 +124,7 @@ body {min-width: 17em;}
 }
 
 /* 
- * Footer. 
+ * Footer (optional). 
  */
 
 #footer

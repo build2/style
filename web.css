@@ -1,0 +1,29 @@
+/* file      : web.css
+ * copyright : Copyright (c) 2014-2016 Code Synthesis Ltd
+ * license   : MIT; see accompanying LICENSE file
+ */
+
+/* Bases:
+ *
+ * common.css
+ * pre-box.css
+ * code-box.css
+ *
+ */
+
+@media only screen and (max-width: 567px)
+{
+  #header-menu
+  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+h1
+{
+  font-weight: normal;
+  font-size: 2em;
+  line-height: 1.4em;
+  margin: 1.6em 0 .6em 0;
+}
