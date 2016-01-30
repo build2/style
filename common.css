@@ -62,11 +62,9 @@ body {min-width: 17em;}
 #header-logo {text-align: left;}
 #header-menu {text-align: right;}
 
-/* These overlap with #header's padding, FSR. To make this work when -menu is
-   flexbox, we have to add this padding to its children so they don't touch
-   the browser frame. Don't you just love web development? */
-#header-logo {padding-left: .4em;}
-#header-menu a {margin-right: .45em;} /* Font size adjustment. */
+/* These overlap with #header's padding when no margin left, FSR. */
+#header-logo {padding-left: .25em;}
+#header-menu {padding-right: .25em;}
 
 #header-menu a
 {
@@ -86,7 +84,7 @@ body {min-width: 17em;}
 }
 
 /* Flexbox-based improvements though the above works reasonably well. */
-#header-menu
+#header-menu-body
 {
   width: 100%;
 
@@ -94,7 +92,7 @@ body {min-width: 17em;}
   display: inline-flex;
 
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;  
+  flex-flow: row wrap;
 
   -webkit-justify-content: flex-end;
   justify-content: flex-end;
@@ -104,7 +102,7 @@ body {min-width: 17em;}
 /*
 @media only screen and (max-width: 567px)
 {
-  #header-menu
+  #header-menu-body
   {
     -webkit-flex-direction: column;
     flex-direction: column;

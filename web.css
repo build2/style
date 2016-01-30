@@ -13,7 +13,7 @@
 
 @media only screen and (max-width: 567px)
 {
-  #header-menu
+  #header-menu-body
   {
     -webkit-flex-direction: column;
     flex-direction: column;
