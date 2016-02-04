@@ -13,6 +13,7 @@
 
 #content
 {   
+  max-width: 43.6em;
   padding-left: 3em; /* Reserve for headings. */
 }
 

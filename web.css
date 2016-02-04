@@ -20,10 +20,36 @@
   }
 }
 
+#header-logo {font-size: 1.2em;}
+#header-logo code {background-color: #fff; color: #333;}
+
 h1
 {
   font-weight: normal;
   font-size: 2em;
   line-height: 1.4em;
-  margin: 1.6em 0 .6em 0;
+  margin: 1.6em 0 1em 0;
+}
+
+h1 code {font-size: 1em;}
+
+h2
+{
+  font-weight: normal;
+  font-size: 1.556em;
+  line-height: 1.4em;
+  margin: 1.6em 0 1em 0;
+}
+
+/* This one is used for FAQ questions. A hack to avoid separate style file. */
+h3
+{
+  font-weight: normal;
+  font-size: 1.223em;
+  line-height: 1.4em;  
+  letter-spacing: 0;
+  margin: 2.4em 0 1em 0;
+    
+  padding-left: .4em;
+  border-left: 3px solid #ccc;
 }

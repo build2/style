@@ -34,16 +34,20 @@ body {min-width: 17em;}
   background: rgba(0, 0, 0, 0.04);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 
-  padding: .3em 0 .3em 0;
+  padding: .4em 0 .42em 0;
   margin: 0 0 1.4em 0;
 }
 
 #header
 {
   /* Same as in #content. */
-  max-width: 40em;
+  max-width: 41em;
   margin: 0 auto 0 auto;
   padding: 0 .4em 0 .4em;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 
   width: 100%;
   display: table;
@@ -62,9 +66,18 @@ body {min-width: 17em;}
 #header-logo {text-align: left;}
 #header-menu {text-align: right;}
 
-/* These overlap with #header's padding when no margin left, FSR. */
-#header-logo {padding-left: .25em;}
-#header-menu {padding-right: .25em;}
+/* These overlap with #header's margin because of border collapsing. */
+#header-logo {padding-left: .4em;}
+#header-menu {padding-right: .4em;}
+
+#header-logo a 
+{
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+#header-logo a:visited {color: #000;}
+#header-logo a:hover, #header-logo a:active {color: #000;}
 
 #header-menu a
 {
@@ -73,9 +86,14 @@ body {min-width: 17em;}
   text-align: right;
   margin-left: 1em;
   white-space: nowrap;
+  letter-spacing: 0;
 }
 
-#header-menu a {color: #000;}
+#header-menu a 
+{
+  color: #000;
+  outline: none;
+}
 #header-menu a:visited {color: #000;}
 #header-menu a:hover, #header-menu a:active 
 {
@@ -116,9 +134,13 @@ body {min-width: 17em;}
 
 #content
 {
-  max-width: 40em;
+  max-width: 41em;
   margin: 0 auto 0 auto;
-  padding: 0 .4em 0 .4em; /* Space between text and browser frame. */  
+  padding: 0 .4em 0 .4em; /* Space between text and browser frame. */
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* 
@@ -131,8 +153,16 @@ body {min-width: 17em;}
   font-size: 0.7223em;
   line-height: 1.3em;
   margin: 2.2em 0 1em 0;
-  text-align: center;
+  text-align: center;  
 }
+
+#footer a 
+{
+  color: #767676;
+  text-decoration: underline;
+}
+#footer a:visited {color: #767676;}
+#footer a:hover, #footer a:active {color: #3870c0;}
 
 /* Screen size indicator in the footer. The before/after content is in case
    we don't have any content in the footer. Margin is to actually see the
@@ -176,6 +206,7 @@ body {min-width: 17em;}
  */
 
 p, li, dd {text-align: justify;}
+pre {text-align: left;} /* If it is inside li/dd. */
 
 a
 {
