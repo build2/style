@@ -12,7 +12,7 @@
  */
 
 #content
-{   
+{
   max-width: 43.6em;
   padding-left: 3em; /* Reserve for headings. */
 }
@@ -21,9 +21,9 @@ h1
 {
   font-weight: normal;
   font-size: 2em;
-  line-height: 1.4em;  
+  line-height: 1.4em;
   margin: 1.6em 0 .6em -1.4em;
-}   
+}
 
 /* Title page */
 

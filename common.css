@@ -55,9 +55,9 @@ body {min-width: 17em;}
   border-collapse: collapse;
 }
 
-#header-logo, #header-menu 
+#header-logo, #header-menu
 {
-  display: table-cell; 
+  display: table-cell;
   border: none;
   padding: 0;
   vertical-align: middle;
@@ -70,7 +70,7 @@ body {min-width: 17em;}
 #header-logo {padding-left: .4em;}
 #header-menu {padding-right: .4em;}
 
-#header-logo a 
+#header-logo a
 {
   color: #000;
   text-decoration: none;
@@ -81,7 +81,7 @@ body {min-width: 17em;}
 
 #header-menu a
 {
-  font-size: 0.889em;  
+  font-size: 0.889em;
   line-height: 1.4em;
   text-align: right;
   margin-left: 1em;
@@ -89,13 +89,13 @@ body {min-width: 17em;}
   letter-spacing: 0;
 }
 
-#header-menu a 
+#header-menu a
 {
   color: #000;
   outline: none;
 }
 #header-menu a:visited {color: #000;}
-#header-menu a:hover, #header-menu a:active 
+#header-menu a:hover, #header-menu a:active
 {
   color: #3870c0;
   text-decoration: none;
@@ -128,8 +128,8 @@ body {min-width: 17em;}
 }
 */
 
-/* 
- * Content. 
+/*
+ * Content.
  */
 
 #content
@@ -143,20 +143,20 @@ body {min-width: 17em;}
   box-sizing: border-box;
 }
 
-/* 
- * Footer (optional). 
+/*
+ * Footer (optional).
  */
 
 #footer
-{ 
+{
   color: #767676;
   font-size: 0.7223em;
   line-height: 1.3em;
   margin: 2.2em 0 1em 0;
-  text-align: center;  
+  text-align: center;
 }
 
-#footer a 
+#footer a
 {
   color: #767676;
   text-decoration: underline;
@@ -181,28 +181,28 @@ body {min-width: 17em;}
 }
 
 @media only screen and (max-width: 359px)
-{  
+{
   #footer {border-color: red;}
 }
 
 @media only screen and (min-width: 360px) and (max-width: 567px)
-{  
+{
   #footer {border-color: orange;}
 }
 
 @media only screen and (min-width: 568px) and (max-width: 1023px)
-{  
+{
   #footer {border-color: blue;}
 }
 
 @media only screen and (min-width: 1024px)
-{  
+{
   #footer {border-color: green;}
 }
 */
 
-/* 
- * Common elements. 
+/*
+ * Common elements.
  */
 
 p, li, dd {text-align: justify;}
@@ -215,17 +215,17 @@ a
   text-decoration: none;
 }
 
-a:hover, a:active 
-{  
+a:hover, a:active
+{
 /*color: #006fbf;*/
 /*color: #0087e7;*/
   text-decoration: underline;
 }
 
-a:visited 
+a:visited
 {
 /*color: #003388;*/
-  color: #00409c;  
+  color: #00409c;
 }
 
 /* Standard lists. */
@@ -245,12 +245,12 @@ code, pre
 pre {white-space: pre-wrap;}
 
 @media only screen and (max-width: 567px)
-{  
+{
   pre {word-break: break-all;}
 }
 
 /* Use page rather than system font settings. */
-input 
+input
 {
   font-family: inherit;
   font-weight: inherit;
