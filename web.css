@@ -42,7 +42,7 @@ h2
 }
 
 /* This one is used for FAQ questions. A hack to avoid separate style file. */
-h3
+h4
 {
   font-weight: normal;
   font-size: 1.223em;
