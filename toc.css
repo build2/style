@@ -28,18 +28,18 @@ table.toc * td, table.toc * th {
 table.toc * th
 {
   font-weight       : normal;
-  padding           : 0em 0.1em 0em 0;
+  padding           : 0 0.8em 0 0;
   text-align        : left;
   white-space       : nowrap;
 }
 
 table.toc * table.toc th
 {
-  padding-left      : 1em;
+  padding-left      : 1.7em;
 }
 
 table.toc * td
 {
-  padding           : 0em 0 0em 0.7em;
+  padding           : 0 0 0 0;
   text-align        : left;
 }
