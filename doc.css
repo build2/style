@@ -33,6 +33,14 @@ h2
   margin: 1.6em 0 .6em -.8em;
 }
 
+h3
+{
+  font-weight: normal;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin: 1.6em 0 .6em -.2em;
+}
+
 /* Title page */
 
 #titlepage {
