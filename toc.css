@@ -43,3 +43,8 @@ table.toc * td
   padding           : 0 0 0 0;
   text-align        : left;
 }
+
+table.toc * td.preface
+{
+  padding-left      : 1.35em;
+}
