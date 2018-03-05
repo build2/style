@@ -206,7 +206,8 @@ body {min-width: 17em;}
  */
 
 p, li, dd {text-align: justify;}
-pre {text-align: left;} /* If it is inside li/dd. */
+.code {text-align: left;} /* Manually aligned. */
+pre {text-align: left;}   /* If it is inside li/dd. */
 
 a
 {
