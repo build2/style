@@ -11,7 +11,7 @@ html
   line-height: 1.4em;
   letter-spacing: 0.01em;
 
-  color: #333;
+  color: #292929;
 }
 
 body {margin: 0;} /* There is non-0 default margin for body. */
@@ -209,6 +209,32 @@ p, li, dd {text-align: justify;}
 .code {text-align: left;} /* Manually aligned. */
 pre {text-align: left;}   /* If it is inside li/dd. */
 
+/* Notes. */
+
+.note
+{
+  color: #606060;
+}
+
+div.note
+{
+  margin: 1em 0 1em 0;
+
+  padding-left: 0.5em;
+  border: 0.25em;
+  border-left-style: solid;
+  border-color: #808080;
+
+  page-break-inside: avoid;
+}
+
+div.note :first-child {margin-top:    0;}
+div.note :last-child  {margin-bottom: 0;}
+
+span.note::before {content: "[Note: "}
+span.note::after  {content: "]"}
+
+/* Links. */
 a
 {
   color: #3870c0;
