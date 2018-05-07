@@ -218,7 +218,7 @@ pre {text-align: left;}   /* If it is inside li/dd. */
 
 div.note
 {
-  margin: 1em 0 1em 0;
+  margin: 2em 0 2em 0; /* The same top/bottom margings as pre box. */
 
   padding-left: 0.5em;
   border: 0.25em;
