@@ -255,6 +255,10 @@ a:visited
   color: #00409c;
 }
 
+/* Standard paragraph. */
+
+p, pre {margin: 1em 0 1em 0;}
+
 /* Standard lists. */
 ul, ol, dl {margin: 1em 0 1em 0;}
 ul li, ol li {margin: 0 0 .4em 0;}
