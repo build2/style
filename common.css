@@ -274,7 +274,6 @@ code, pre
 }
 
 pre {white-space: pre-wrap;}
-
 @media only screen and (max-width: 567px)
 {
   pre {word-break: break-all;}
